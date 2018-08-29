@@ -35,7 +35,7 @@ public class DemoController {
     @RequestMapping(value="/updateUser",method=RequestMethod.POST,consumes= MediaType.APPLICATION_JSON_VALUE)
     public ResObject updateUser(@RequestBody User user){
     	System.out.println("updateUser:::"+user.toString());
-    	return new ResObject(HttpStatus.OK.value(), "修改成功!");
+    	return new ResObject(HttpStatus.OK.value(), "修改成功!!");
     }
 
     @ApiOperation(value = "删除用户" ,  notes="删除用户")
