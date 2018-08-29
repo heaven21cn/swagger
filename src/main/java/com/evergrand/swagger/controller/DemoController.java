@@ -28,7 +28,7 @@ public class DemoController {
     @RequestMapping(value="/createUser",method=RequestMethod.POST,consumes= MediaType.APPLICATION_JSON_VALUE)
     public ResObject createUser(@RequestBody User user){
     	System.out.println("createUser:::"+user.toString());
-        return new ResObject(HttpStatus.OK.value(), "新增成功!");
+        return new ResObject(HttpStatus.OK.value(), "新增成功!!!");
     }
 
     @ApiOperation(value = "修改用户" ,  notes="修改用户")
